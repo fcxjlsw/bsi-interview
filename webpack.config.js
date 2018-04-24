@@ -33,6 +33,11 @@ module.exports = (env) => {
                     exclude: /node_modules/,
                     use: config.tsxLoaders
                 },
+                { // scripts
+                    test: /\.js$/,
+                    include: path.join(__dirname, 'src'),
+                    loaders: ['babel-loader']
+                },
                 {
                     test: /\.scss$/, 
                     use: ExtractTextPlugin.extract({

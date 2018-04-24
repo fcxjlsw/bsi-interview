@@ -14,7 +14,8 @@
     "preserveConstEnums": true,
     "suppressImplicitAnyIndexErrors": true,
     "module": "commonjs",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowJs": true
   },
   "exclude": [
     "node_modules"
